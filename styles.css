@@ -15,28 +15,35 @@ body {
 
 .container {
   display: flex;
+  flex-direction: column;
   background: white;
   border-radius: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 90%;
-  max-width: 1200px;
-  height: 80vh;
+  width: 80vh;
+  height: 90%;
+  max-height: 800px;
   position: relative;
 }
 
+.main-section {
+  display: flex;
+  flex: 1;
+}
+
 .sidebar {
-  width: 80px;
+  height: 100%;
+  width: 60px;
   background: #f8f8f8;
-  border-radius: 15px 0 0 15px;
-  padding: 20px 10px;
+  border-radius: 0 0 0 15px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
 
-.sidebar-top-shape,
-.sidebar-bottom-shape {
+.sidebar-left-shape,
+.sidebar-right-shape {
   width: 40px;
   height: 40px;
   background: #e0e0e0;
@@ -44,14 +51,14 @@ body {
 }
 
 .sidebar-small-rect {
-  width: 50px;
+  width: 40px;
   height: 60px;
   background: #e0e0e0;
   border-radius: 8px;
 }
 
 .sidebar-large-rect {
-  width: 50px;
+  width: 40px;
   height: 200px;
   background: #e0e0e0;
   border-radius: 8px;
@@ -69,11 +76,11 @@ body {
 
 .top-shape,
 .bottom-shape {
-  height: 30px;
+  width: 30px;
   background: #e0e0e0;
   border-radius: 8px;
-  margin: 10px 0;
-  width: 95%;
+  margin: 0 10px;
+  height: 95%;
 }
 
 .content-area {
@@ -81,7 +88,7 @@ body {
   position: relative;
   background: #fafafa;
   border-radius: 8px;
-  margin: 10px 0;
+  margin: 10px;
 }
 
 .page-indicator {
